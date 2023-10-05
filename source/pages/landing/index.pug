@@ -1,0 +1,33 @@
+extends ../../layouts/landing
+
+block title
+  title Landing | NN
+
+block content
+
+  section.container
+  
+    link( href="/pages/landing/styles.css" rel="stylesheet" )
+
+    .row
+        
+      .col.s10.push-s1
+
+        h1
+          img( src="/template/images/logo-nn.svg" width="300" alt="Ново-Никольское" )
+          
+        .b-h1 Сайт на реконструкции
+
+        p Подробная информация о проекте по телефону: <a href="tel:84951626140">8&nbsp;(495)&nbsp;162&nbsp;61&nbsp;40</a><br>или на сайте <a href="https://www.estatet.ru/catalog_new/novo_nikolskoe_zhk/descr/">www.estatet.ru</a>
+
+  footer
+  
+    .container
+      .row
+        .col.s10.push-s1
+          .b-footer-logo( style="background-image: url( '/template/images/footer-logo.png' );" )
+          span © Новоникольское 2020 год.
+          span Официальный сайт жилого комплекса Ново-Никольское в Новой Москве. 
+          
+  script
+    | $( function() { $( 'body' ).addClass( 'i-load' ); });
